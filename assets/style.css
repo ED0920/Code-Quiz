@@ -7,6 +7,33 @@
 .starter-page {
     display: flex;
     box-sizing: border-box;
+    flex-direction: row;
+}
+
+.starter-page h3{
+    min-width: 100px;
+}
+
+.time{
+    min-width: 100px;
+    text-align: end;
+}
+
+.question-container {
+    display: flex;
+    flex:1;
+    box-sizing: border-box;
+    flex-direction: column;
+    /* text-align:center; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+ol{
+    margin:0px;
+    padding-left: 0px;
 }
 
 .nav {
@@ -16,37 +43,40 @@
 }
 
 .main-start {
+    flex: 1;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    overflow-wrap:break-word;
-
+    justify-content: center;
+    font-size: 22px;
 }
 
+
 .btn {
-    background-color: purple;
+    background-color: #361b74;
     font-size: 18px;
     border: none;
     color: white;
-    padding: 8px 10px;
-    display:flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    /* text-decoration: none; */
-    /* display: inline-block; */
-    border-radius: 4px;
-
+    padding: 8px 12px;
+    border-radius: 8px;
+    
 }
 
-.question h2 {
-    margin-top: 100px;
-    padding: 15px 10px 15px 5px;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
+.btn:hover{
+    background: #bc60e6;
+}
 
+.question button {
+    background-color: #361b74;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 5px 18px;
+    border-style: none;
+}
+
+.question button:hover{
+    background: #bc60e6;
 }
