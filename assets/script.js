@@ -67,14 +67,13 @@ function enterInitials() {
   document.getElementById("finalscore").textContent = secondsLeft;
 }
 
-// create function for correct answer
 
 function correctanswer() {
   questionsAnswered++;
   showNextQuestion();
 }
 
-// create function for incorrect answer
+// check function for incorrect answer
 function incorrectanswer() {
   questionsAnswered++;
   secondsLeft -= incorrectTimeDeduction;
@@ -86,9 +85,8 @@ function showNextQuestion() {
     .getElementById("q" + questionsAnswered)
     .setAttribute("style", "display:none");
 
+  // last question answered, hide question page
   if (questionsAnswered === numQuestions) {
-    //TODO show ending screen here!
-    // console.log(secondsLeft);
     questionsEl.setAttribute("style", "display:none");
     enterInitials();
     return;
@@ -107,7 +105,6 @@ function startTimer() {
 
     if (secondsLeft <= 0) {
         secondsLeft = 0;
-      //TODO show ending screen here!
       console.log(secondsLeft);
       clearInterval(timer);
       console.log(timer);
@@ -116,10 +113,10 @@ function startTimer() {
   }, 1000);
 }
 
+// sort highscoreboard from asending order
 function submitScore() {
   var initials = initialsInputEl.value;
   highscoresBoard.push({ initials: initials, score: secondsLeft });
-  // sort in descending
   highscoresBoard.sort((a, b) => b.score - a.score);
 
   allDoneEl.setAttribute("style", "display: none");
@@ -155,7 +152,8 @@ function goBackButtonClick() {
     timeEl.textContent = "Time"
     secondsLeft = 60;
     initialsInputEl.value = "";
-//   TODO update time element with secondsLeft
+
+// Style time element with secondsLeft
   hsPageEl.setAttribute("style", "display: none");
   mainstartEl.setAttribute("style", "display:block");
   questionsAnswered = 0;
