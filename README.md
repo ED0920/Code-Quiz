@@ -33,5 +33,5 @@ WHEN the game is over
 THEN I can save my initials and my score
 ```
 
-Deployed Application - 
+Deployed Application - https://ed0920.github.io/Code-Quiz/
 ![final product](./assets/Code%20Quiz.png)
