@@ -24,7 +24,6 @@
     flex:1;
     box-sizing: border-box;
     flex-direction: column;
-    /* text-align:center; */
     align-items: center;
     justify-content: center;
     margin-top: 100px;
@@ -79,4 +78,49 @@ ol{
 
 .question button:hover{
     background: #bc60e6;
+}
+
+.all-done{
+    display: flex;
+    flex:1;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.all-done button{
+    background-color: #361b74;
+    color:white;
+    border-radius: 4px;
+}
+.all-done button:hover{
+    background: #bc60e6;
+}
+
+.highscore-container {
+        display: flex;
+        flex:1;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 100px;
+        align-items: left;
+    }
+
+.all-done {
+    display: flex;
+    flex:1;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.hsbutton button {
+    background-color: #361b74;
+    color: white;
+    border-radius: 4px;
+    margin: 0;
 }
